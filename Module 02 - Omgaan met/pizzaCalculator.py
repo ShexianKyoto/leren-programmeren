@@ -1,31 +1,34 @@
 #Rayen ter Wal | Pizza Calculator
-print("Welkom bij Domino's!")
+print("Welkom!")
 afmeting = input('Kies uw afmeting pizza (Small, Medium of Large): ')
 print('-' * 30)
 
 if afmeting == 'small':
     aantalsmall = int(input("Voer uw aantal Small pizza's in: "))
+    print('-' * 30)
     prijssmall = 7.49
     kostensmall = aantalsmall * prijssmall
-    print(f"Totaalprijs voor {aantalsmall} Small pizza's is {kostensmall} euro.")
+    print(f"{aantalsmall}   Small pizza's       €{kostensmall}")
     print('-' * 30)
-    print("Bedankt voor het bestellen bij Domino's")
+    print("Bedankt voor het bestellen!")
 
 elif afmeting == 'medium':
     aantalmedium = int(input("Voer uw aantal Medium pizza's in: "))
+    print('-' * 30)
     prijsmedium = 8.99
     kostenmedium = aantalmedium * prijsmedium
-    print(f"Totaalprijs voor {aantalmedium} Medium pizza's is {kostenmedium} euro.")
+    print(f"{aantalmedium}   Medium pizza's       €{kostenmedium}")
     print('-' * 30)
-    print("Bedankt voor het bestellen bij Domino's")
+    print("Bedankt voor het bestellen!")
 
 elif afmeting == 'large':
     aantallarge = int(input("Voer uw aantal Large pizza's in: "))
+    print('-' * 30)
     prijslarge = 12.49
     kostenlarge = aantallarge * prijslarge
-    print(f"Totaalprijs voor {aantallarge} Large pizza's is {kostenlarge} euro.")
+    print(f"{aantallarge}   Large pizza's       €{kostenlarge}")
     print('-' * 30)
-    print("Bedankt voor het bestellen bij Domino's")
+    print("Bedankt voor het bestellen!")
 
 else:
     print('Ik heb uw antwoord niet begrepen, probeer het opnieuw (zonder hoofdletters).')
