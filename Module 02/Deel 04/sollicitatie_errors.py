@@ -1,13 +1,17 @@
-from distutils.log import error
-
-
 print('Om te solliciteren voor de vacature van \'Circusdirecteur voor Circus HotelDeBoer\' moet u voldoen aan bepaalde eisen,\
     hiervoor zullen wij u een paar vragen stellen. Als het blijkt dat u voldoet aan de benodigde criteria heeft u kans op\
     een uitnodiging van een sollicitatiegesprek.')
 
 naam = input('Voer uw naam in: ').lower()
-if naam == 'piet':
+if naam in ('piet','kerstman', 'paashaas'):
     raise NameError(f'Er is geen sinterklaas hier voor {naam}.')
+heeft_auto = input('Beschikt u over een auto met 500 pk?: ').lower()
+if heeft_auto == 'nee':
+    raise NameError('Geen 500 pk? Amateur...')
+heeft_partner = input('Heeft u een partner?: ').lower()
+if heeft_partner == 'ja':
+    raise NameError('Jammer voor je.')
+
 ervaring_dierendressuur = int(input('Hoeveel jaar praktijkervaring heeft u met dieren-dressuur?: '))
 ervaring_jongleren = int(input('Hoeveel jaar ervaring heeft u met jongleren?: '))
 ervaring_acrobatiek = int(input('Hoeveel jaar praktijkervaring heeft u met acrobatiek?: '))
@@ -18,22 +22,16 @@ geslacht = input('Voer uw geslacht in: ').lower()
 if geslacht == 'man':
     heeft_snor = input('Heeft u een snor?: ').lower()
     if heeft_snor == 'ja':
-        snorlengte = input('Voer uw snorlengte in cm in: ').lower()
+        snorlengte = int(input('Voer uw snorlengte in cm in: '))
 elif geslacht == 'vrouw':
     heeft_rood_krulhaar = input('Heeft u rood krulhaar?: ').lower()
     if heeft_rood_krulhaar == 'ja':
-        lengte_krulhaar = input('Voer uw krulhaarlengte in cm in: ').lower()
-lichaamslengte = input('Voer uw lichaamslengte in cm in: ').lower()
-lichaamsgewicht = input('Voer uw gewicht in kg in: ').lower()
-certificaat_overlevenMetGevaarlijkPersoneel = input('Bezit u over een certificaat \'Overleven met gevaarlijk personeel\'?: ').lower()
-heeft_auto = input('Beschikt u over een auto met 500 pk?: ').lower()
-if heeft_auto == 'nee':
-    raise NameError('Geen 500 pk? Amateur...')
+        lengte_krulhaar = int(input('Voer uw krulhaarlengte in cm in: '))
+lichaamslengte = int(input('Voer uw lichaamslengte in cm in: '))
+lichaamsgewicht = int(input('Voer uw gewicht in kg in: '))
+certificaat_overlevenMetGevaarlijkPersoneel = input('Bezit u over een certificaat \'Overleven met gevaarlijk personeel\'?: ').lower()    
 heeft_fiets = input('Beschikt u over een elektrische fiets?: ').lower()
 heeft_conditie = input('Beschikt u over een goede conditie i.v.m sportdag?: ').lower()
-heeft_partner = input('Heeft u een partner?: ').lower()
-if heeft_partner == 'ja':
-    raise NameError('Jammer voor je.')
 
 toelating = False
 if ervaring_dierendressuur >= 4 or ervaring_jongleren >= 5 or ervaring_acrobatiek >= 3: toelating = True
