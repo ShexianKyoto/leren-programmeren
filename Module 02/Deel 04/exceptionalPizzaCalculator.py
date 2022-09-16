@@ -1,47 +1,44 @@
 #Rayen ter Wal | Exceptional Pizza Calculator
+prijssmall = 7.49
+prijsmedium = 8.99
+prijslarge = 12.49
+aantalpizza = 0
+kosten = 0
 
-try:
-    print("Welkom!")
-    afmeting = input('Kies uw afmeting pizza (Small, Medium of Large): ').lower()
-    print('-' * 30)
-except:
-    print('Er is een probleem opgelopen! Probeer het opnieuw of later nog eens.')
+print("Welkom!")
+print('-' * 30)
+while True:
+    try: 
+        afmeting = input('Kies uw afmeting pizza (Small, Medium of Large): ').lower()
+        if afmeting in ('small','medium','large'):
+            print('-' * 30)
+            break
+        else:  
+            print('Oops! Voer 1 van de 3 aangegeven afmetingen in. ')
+            continue 
+    except: 
+        print('Er is een fout opgetreden! Probeer het opnieuw.')  
+        continue 
+
+while True:
+    try: 
+        aantalpizza = input(f'Voer uw aantal {afmeting} pizza\'s in: ')
+        if aantalpizza.isnumeric() == True: break
+        elif aantalpizza.isnumeric() == False:
+            print(f'Oops! Voer uw AANTAL {afmeting} pizza(\'s) in!')
+            continue
+    except ValueError: 
+        print('Er is een fout opgetreden! Probeer het opnieuw.')  
+        continue
 
 if afmeting == 'small':
-    prijssmall = 7.49
-    try:
-        aantalsmall = int(input("Voer uw aantal pizza's in: "))
-        kostensmall = aantalsmall * prijssmall
-        print('-' * 30)
-        print(f"{aantalsmall}   Small pizza's       €{kostensmall}")
-        print('-' * 30)
-        print("Bedankt voor het bestellen!")
-    except:
-        print('Er is een probleem opgelopen! Probeer het opnieuw of later nog eens.')
-
+    kosten = int(aantalpizza) * prijssmall
 elif afmeting == 'medium':
-    prijsmedium = 8.99
-    try:
-        aantalmedium = int(input("Voer uw aantal pizza's in: "))
-        kostenmedium = aantalmedium * prijsmedium
-        print('-' * 30)
-        print(f"{aantalmedium}   Medium pizza's       €{kostenmedium}")
-        print('-' * 30)
-        print("Bedankt voor het bestellen!")
-    except:
-        print('Er is een probleem opgelopen! Probeer het opnieuw of later nog eens.')
+    kosten = int(aantalpizza) * prijsmedium
+elif afmeting == 'large': 
+    kosten = int(aantalpizza) * prijslarge
 
-elif afmeting == 'large':
-    prijslarge = 12.49
-    try:
-        aantallarge = int(input("Voer uw aantal pizza's in: "))
-        kostenlarge = aantallarge * prijslarge
-        print('-' * 30)
-        print(f"{aantallarge}   Large pizza's       €{kostenlarge}")
-        print('-' * 30)
-        print("Bedankt voor het bestellen!")
-    except:
-        print('Er is een probleem opgelopen! Probeer het opnieuw of later nog eens.')
-
-else:
-    print('Er is een probleem opgelopen! Probeer het opnieuw of later nog eens.')
+print('-' * 30)
+print(f"{aantalpizza}   {afmeting} pizza's       €{kosten}")
+print('-' * 30)
+print("Bedankt voor het bestellen.")
