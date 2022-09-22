@@ -1,0 +1,18 @@
+Module 02 | Proef A | Game Documentation | Rayen ter Wal
+Een text-based adventure game zoals zork waar je keuzes moet maken die zullen leiden naar jou overwinning of dood.
+
+
+Het is vrijdag avond na een avondje stappen besluit je naar huis te gaan waar je plotseling wordt ontvoerd.
+Je wordt wakker in een soort grot ver weg in Egypte, je hoort en voelt trillingen van geluiden die door de gangen heen echoën.
+
+Als je om je heen kijkt zie je alleen duisternis, alles is pikkedonker. 
+Je hoort enge stemmen jouw naam roepen en er verschijnt licht aan het einde van de gang, je besluit om op onderzoek te gaan. 
+Je loopt door de gang en hoort de stemmen verheffen terwijl het licht word feller. 
+Je komt aan in een kamer waar het licht oorsprongt, hier zie je een altaar waar een bord op staat: 'TOMBE VAN ANUBIS'...
+
+
+Je staat in een hal, er is een gang ten Oosten waar geen licht schijnt. 
+In het midden van de hal staat een tafel met daarop wat papier en een kistje.
+Het is donker aan het einde van de hal, je kan niet zo goed zien wat daar is...
+
+Wat doe je..?
