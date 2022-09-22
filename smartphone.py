@@ -1,32 +1,21 @@
-koop_iphone = False
-koop_iphone_50 = False
-koop_samsung = False
-gelijke_prijs = False
 iphone_prijs = int(input('Hoe duur is de iPhone? (voer een getal in):  '))
 samsung_prijs = int(input('Hoe duur is de Samsung? (voer een getal in):  '))
-verschil_iphone = iphone_prijs - samsung_prijs
-verschil_samsung = samsung_prijs - iphone_prijs
+zenfone_prijs = int(input('Hoe duur is de Zenfone? (voer een getal in):  '))
+budget = 900
 
-if iphone_prijs > samsung_prijs:
+if budget < samsung_prijs and budget < iphone_prijs and budget < zenfone_prijs:
+    print('Het advies is dus geen telefoon te kopen, ze zijn te duur.')
+elif samsung_prijs == iphone_prijs == zenfone_prijs:
+    print('Alle telefoons zijn even duur!')
+elif zenfone_prijs - 100 < iphone_prijs and zenfone_prijs - 100 < samsung_prijs:
+    print('Het advies is dus de ZenFone te kopen, deze is goedkoper dan de andere telefoons.')
+elif iphone_prijs - samsung_prijs <= 50:
     print(f'De iPhone is het duurst, de telefoon kost: {iphone_prijs} Euro')
     print(f'De Samsung is het goedkoopst, de telefoon kost: {samsung_prijs} Euro')
-elif samsung_prijs > iphone_prijs:
+    print(f'Het advies is dus de iPhone: {iphone_prijs},- te kopen. Deze is namelijk maar {iphone_prijs - samsung_prijs} euro duurder/goedkoper dan de Samsung: {samsung_prijs},-  !')
+elif samsung_prijs < iphone_prijs + 50:
     print(f'De Samsung is het duurst, de telefoon kost: {samsung_prijs} Euro')
     print(f'De iPhone is het goedkoopst, de telefoon kost: {iphone_prijs} Euro')
-else: print('Beide telefoons zijn even duur!')
-
-if verschil_samsung <= 50:
-    koop_iphone_50 = True
-elif iphone_prijs > samsung_prijs:
-    koop_iphone = True
-    if koop_iphone_50 == True:
-        koop_iphone = False
-elif iphone_prijs < samsung_prijs:
-    koop_samsung = True
-
-if koop_iphone_50 == True:
-    print(f'Het advies is dus de iPhone: {iphone_prijs},- te kopen. Deze is namelijk maar {verschil_samsung} euro duurder dan de Samsung: {samsung_prijs},-  !')
-elif koop_samsung == True:
-    print(f'Het advies is dus de Samsung te kopen. Deze is namelijk {verschil_samsung} Euro goedkoper dan de iPhone')
-elif koop_iphone == True:
-    print(f'Het advies is dus de iPhone te kopen. Deze is namelijk {verschil_iphone} Euro goedkoper dan de Samsung')
+    print(f'Het advies is dus de Samsung te kopen. Deze is namelijk {samsung_prijs - iphone_prijs} Euro duurder/goedkoper dan de iPhone')
+elif zenfone_prijs - 100 < iphone_prijs and zenfone_prijs - 100 < samsung_prijs:
+    print('')
