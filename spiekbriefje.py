@@ -1,10 +1,9 @@
 #A variable name can only contain (A-z, 0-9, and _ ) and cannot start with a number
-
-variable = "hello" #string
-variable2 = 13     #integer
-variable3 = 1.132  #float
-variable4 = 1j     #complex
-
+variable = "hello" #string datatype
+variable2 = 13     #integer datatype
+variable3 = 1.132  #float datatype
+variable4 = 1j     #complex datatype
+variable5 = True   #boolean datatype
 #multiple variables with multiple values
 #x, y, z = "Orange", "Banana", "Cherry"
 
@@ -13,14 +12,16 @@ print(f'{variable} {variable2}') #f' string werkt met spaties
 
 print(str(variable), int(variable2), float(variable3), complex(variable4))
 
-#datatypes:    str(woord/zin) / int(geen kommagetal) / float(kommagetal)
-
 aantal = int(5)
 omschrijving = str("product")
 stuksprijs = float(1.28)
 regelprijs = aantal * stuksprijs
 kassabon = aantal, omschrijving, stuksprijs, regelprijs
-print(f'{kassabon}')
+print(f'{kassabon}') # f string with {variable} parameter
+
+#   BiF: Built-in Functions
+#   int() | float() | str() | bool() | max/min() | range() | print() | input | list() | len() | iter() |
+#   tuple(list which is ordered and unchangable) | 
 
 #list1 = [variable, "string"]
 

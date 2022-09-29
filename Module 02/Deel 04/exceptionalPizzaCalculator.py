@@ -21,15 +21,12 @@ while True:
         continue 
 
 while True:
-    try: 
-        aantalpizza = input(f'Voer uw aantal {afmeting} pizza\'s in: ')
-        if aantalpizza.isnumeric() == True: break
-        elif aantalpizza.isnumeric() == False:
-            print(f'Oops! Voer uw AANTAL {afmeting} pizza(\'s) in!')
-            continue
-    except ValueError: 
-        print('Er is een fout opgetreden! Probeer het opnieuw.')  
+    aantalpizza = input(f'Voer uw aantal {afmeting} pizza\'s in: ')
+    if aantalpizza.isnumeric(): break
+    else:
+        print(f'Oops! Voer uw AANTAL {afmeting} pizza(\'s) in!')
         continue
+
 
 if afmeting == 'small':
     kosten = int(aantalpizza) * prijssmall
