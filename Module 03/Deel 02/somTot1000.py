@@ -7,4 +7,4 @@ while equasion <= 1000:
     toPrint += "+", addition
     print(f'{iterate}. {toPrint} = {equasion}')
     iterate += 1
-        addition += 1
+    addition += 1
