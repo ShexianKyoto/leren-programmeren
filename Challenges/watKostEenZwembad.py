@@ -29,9 +29,9 @@ elif hoeveelM3 >= 20 and kleur != 'rood':
     kostenAfwerken = 125+(200*hoeveelM2)
 
 print(f'''Offerte voor een zwembad van 8 bij 3 bij 1,5 meter (inhoud: {hoeveelM3} m3)
-Uitgraven                       :  €{kostenUitgraven}
-Afvoeren Grond                  :  €{kostenAfvoeren}
-Voorrijkosten                   :  €{kostenVoorrij}
-Beton + tegel {hoeveelM2}m2     :  €{kostenAfwerken}
-Totaal                          :  €{kostenUitgraven+kostenAfvoeren+kostenVoorrij+kostenAfwerken}
+Uitgraven                 :  €{kostenUitgraven}
+Afvoeren Grond            :  €{kostenAfvoeren}
+Voorrijkosten             :  €{kostenVoorrij}
+Beton + tegel {hoeveelM2}m2      :  €{kostenAfwerken}
+Totaal                    :  €{kostenUitgraven+kostenAfvoeren+kostenVoorrij+kostenAfwerken}
 ''')
