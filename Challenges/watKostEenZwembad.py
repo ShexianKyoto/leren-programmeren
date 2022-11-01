@@ -3,12 +3,12 @@ breedte = float(input('Voer de de breedte van het zwembad in (in meters(vb. 7.49
 diepte = float(input('Voer de de diepte van het zwembad in (in meters(vb. 2.13)): '))
 afstand = float(input('Voer de afstand in van ons bedrijf in aantal km: '))
 kleur = str(input('Wat voor kleur afwering wilt u? ')).lower()
+
 hoeveelM2 = hoogte*breedte
 hoeveelM3 = hoeveelM2*diepte
 print(hoeveelM3)
-
 kostenUitgraven = hoeveelM3*25 #vaste prijs per m3
-kostenAfvoeren = hoeveelM3*32.50 #vaste prijs per m3
+kostenAfvoeren = hoeveelM3*32.50 #vaste prijs per m
 
 if afstand < 50 and hoeveelM3 < 20:
     kostenVoorrij = 100+(afstand*1.25)

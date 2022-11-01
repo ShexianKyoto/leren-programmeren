@@ -1,11 +1,11 @@
-#A variable name can only contain (A-z, 0-9, and _ ) and cannot start with a number
+# A variable name can only contain (A-z, 0-9, and _ ) and cannot start with a number
 variable = "hello" #string datatype
 variable2 = 13     #integer datatype
 variable3 = 1.132  #float datatype
 variable4 = 1j     #complex datatype
 variable5 = True   #boolean datatype
-#multiple variables with multiple values
-#x, y, z = "Orange", "Banana", "Cherry"
+# multiple variables with multiple values
+# x, y, z = "Orange", "Banana", "Cherry"
 
 print(variable)
 print(f'{variable} {variable2}') #f' string werkt met spaties
@@ -23,17 +23,19 @@ print(f'{kassabon}') # f string with {variable} parameter
 #   int() | float() | str() | bool() | max/min() | range() | print() | input | list() | len() | iter() |
 #   tuple(list which is ordered and unchangable) | 
 
-#list1 = [variable, "string"]
+# list1 = [variable, "string"]
 
-#Tuples are used to store multiple items in a single variable.
+# Tuples are used to store multiple items in a single variable.
 
-#typecasting: datatype omzetten andere datatype
+# typecasting: datatype omzetten andere datatype
 
-#looping through a string
-#for x in "banana":
-#print(x)
+# looping through a string
+# for x in "banana":
+# print(x)
 
-#boolean = true or false, example: 10 > 9 = true
+# boolean = true or false, example: 10 > 9 = true
+
+# DRY: (Don't Repeat Yourself) logica geef je 1x aan..
 
 ### PYTHON OPERATORS ###
 
