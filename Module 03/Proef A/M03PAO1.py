@@ -1,5 +1,6 @@
 import random
 userinput = None
+geraden = 0
 
 for round in range(0,20):
     round+=1
@@ -17,15 +18,18 @@ RONDE {round}''')
         print(f'POGING {attempt}')
         userinput = input('Voer een getal in: ').lower()
         if userinput == 'stop':
-            print('''Jammer!
+            print(f'''Jammer!
 Bedankt voor het spelen :)
+Aantal geraden: {geraden}
 ''')
             break
         elif userinput != 'stop':
             userinput = int(userinput)
 
         if userinput == guess:
-            print('''GERADEN!
+            geraden+=1
+            print(f'''GERADEN!
+Aantal geraden: {geraden}
 ''')
             break
 
