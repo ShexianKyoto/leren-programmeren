@@ -6,39 +6,43 @@ variable4 = 1j     #complex datatype
 variable5 = True   #boolean datatype
 # multiple variables with multiple values
 # x, y, z = "Orange", "Banana", "Cherry"
-
+#
 print(variable)
-print(f'{variable} {variable2}') #f' string werkt met spaties
-
+print(f'{variable} {variable2}') #f' string werkt beter met variables
 print(str(variable), int(variable2), float(variable3), complex(variable4))
-
+#
 aantal = int(5)
 omschrijving = str("product")
 stuksprijs = float(1.28)
 regelprijs = aantal * stuksprijs
 kassabon = aantal, omschrijving, stuksprijs, regelprijs
 print(f'{kassabon}') # f string with {variable} parameter
-
+#
 #   BiF: Built-in Functions
 #   int() | float() | str() | bool() | max/min() | range() | print() | input | list() | len() | iter() |
 #   tuple(list which is ordered and unchangable) | 
-
+#
 # list1 = [variable, "string"]
-
+#
 # Tuples are used to store multiple items in a single variable.
-
+#
 # typecasting: datatype omzetten andere datatype
-
+#
 # looping through a string
 # for x in "banana":
 # print(x)
-
+#
 # boolean = true or false, example: 10 > 9 = true
-
-# DRY: (Don't Repeat Yourself) logica geef je 1x aan..
-
+#
+# DRY: (Don't Repeat Yourself) logica geef je 1x aan..'
+#
+# break in een while is een nooduitgang (geen uitgang)
+# condition is altijd true of false
+# if false or true: true
+# expression is iets wat je uit kan rekenen
+#
 ### PYTHON OPERATORS ###
-
+#
 #   Python Arithmetic Operators
 #Operator    Name	            Example
 #   +        Addition	        x + y	
@@ -48,7 +52,7 @@ print(f'{kassabon}') # f string with {variable} parameter
 #   %        Modulus	        x % y	
 #   **       Exponentiation	    x ** y	
 #   //       Floor division	    x // y
-
+#
 #   Python Assignment Operators
 #Operator	 Example	    Same As
 #   =	     x = 5          x = 5	
@@ -64,7 +68,7 @@ print(f'{kassabon}') # f string with {variable} parameter
 #   ^=	     x ^= 3	        x = x ^ 3	
 #   >>=	     x >>= 3	    x = x >> 3	
 #   <<=	     x <<= 3        x = x << 3
-
+#
 #   Python Comparison Operators
 # Operator   Name                        Example
 #   ==       Equal	                     x == y	
@@ -73,39 +77,39 @@ print(f'{kassabon}') # f string with {variable} parameter
 #   <	     Less than	                 x < y	
 #   >=	     Greater than or equal to    x >= y	
 #   <=	     Less than or equal to	     x <= y
-
+#
 #   Python Logical Operators
 # Operator   Description                                                Example
 #   and 	 Returns True if both statements are true	                x < 5 and  x < 10	
 #   or	     Returns True if one of the statements is true	            x < 5 or x < 4	
 #   not	     Reverse the result, returns False if the result is true	not(x < 5 and x < 10)
-
+#
 #   Python Identity Operators
 # Operator   Description                                                Example
 #   is 	     Returns True if both variables are the same object	        x is y	
 #   is not	 Returns True if both variables are not the same object	    x is not y
-
+#
 #   Python Membership Operators
 # Operator   Description                                                                            Example
 #in 	     Returns True if a sequence with the specified value is present in the object	        x in y	
-#not in	     Returns True if a sequence with the specified value is not present in the object	    x not in y
-
+#not in	     Returns True if a sequence with the specified value is not present in the object	    x not in #y
+#
 #   Python Bitwise Operators
 # Operator  Name                    Description
 #   & 	    END                     Sets each bit to 1 if both bits are 1
 #   |	    OR	                    Sets each bit to 1 if one of two bits is 1
 #   ^	    XOR	                    Sets each bit to 1 if only one of two bits is 1
 #   ~ 	    NOT	                    Inverts all the bits
-#   <<	    Zero fill left shift	Shift left by pushing zeros in from the right and let the leftmost bits fall off
-#   >>	    Signed right shift	    Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
-
+#   <<	    Zero fill left shift	Shift left by pushing zeros in from the right and let the leftmost bits #fall off
+#   >>	    Signed right shift	    Shift right by pushing copies of the leftmost bit in from the left, and #let the rightmost bits fall off
+#
 ### PYTHON BIF ###
-
+#
 #Function	    Description
 #abs()	        Returns the absolute value of a number
 #all()	        Returns True if all items in an iterable object are true
 #any()	        Returns True if any item in an iterable object is true
-#ascii()	        Returns a readable version of an object. Replaces none-ascii characters with escape character
+#ascii()	        Returns a readable version of an object. Replaces none-ascii characters with escape #character
 #bin()	        Returns the binary version of a number
 #bool()	            Returns the boolean value of the specified object
 #bytearray()	    Returns an array of bytes
