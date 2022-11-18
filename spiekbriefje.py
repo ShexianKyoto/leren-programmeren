@@ -41,6 +41,11 @@ print(f'{kassabon}') # f string with {variable} parameter
 # if false or true: true
 # expression is iets wat je uit kan rekenen
 #
+# [lists] are used to store multiple items in a single variable.
+# (tuples) are used to store multiple items in a single variable, its a collection which is ordered and unchangeable.
+# {sets} are used to store multiple items in a single variable, its a collection which is unordered, #unchangeable*, and unindexed.
+# {dictionaries} are used to store data values in key:value pairs, its a collection which is ordered*, #changeable and do not allow duplicates.
+#
 ### PYTHON OPERATORS ###
 #
 #   Python Arithmetic Operators
