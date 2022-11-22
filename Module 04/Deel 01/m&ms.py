@@ -7,4 +7,5 @@ zak = []
 for willekeurig in range(1, hoeveelheid+1):
     randomkleur = random.choice(kleuren)
     zak.append(randomkleur)
+print(f'Je hebt {hoeveelheid} kleuren in de zak!')
 print(zak)
