@@ -13,7 +13,7 @@ deck.append('Joker'), deck.append('Joker')
 random.shuffle(deck)
 
 for i in range(1, 8):
-    firstseven = print(f'Kaarten {i}: {deck.pop()}')
+    print(f'Kaarten {i}: {deck.pop()}')
 print(f'''
 [Deck] Kaarten: {len(deck)}
 {deck}''')
