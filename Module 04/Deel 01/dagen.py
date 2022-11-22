@@ -15,3 +15,5 @@ for i in range(1, 6):
 print(f'De weekenddagen in omgekeerde volgorde zijn:')
 for i in range(1, 3):
     print(f'{weekenddagen[-i]}')
+
+# verander lijst naar tuple en in 1 tuple

@@ -10,14 +10,13 @@ while nItem != 'nee':
     if nItem == 'ja': 
         iName = input('(Naam) Wat voor item wilt u toevoegen:  ')
         iAmount = int(input(f'(Getal) Hoeveel stuks van {iName}:    '))
-        lijstje.setdefault(iName, iAmount)
+        if iName in lijstje.keys(): lijstje[iName] += iAmount
+        else: lijstje.setdefault(iName, iAmount)
     elif nItem == 'nee':
         print('''
 -=[ Boodschappenlijstje ]=-
 ''')
         for key in lijstje.keys():
             value = lijstje.get(key)
-            print(f'''{value}x {key}
-
----------------------------
-''')
+            print(f'''{value}x {key}''')
+    print('---------------------------')
