@@ -34,4 +34,4 @@ fruitmand = [{
     'color' : 'yellow',
     'round' : True
 }]
-print(len(fruitmand))
+print(f'Items in fruitmand: {len(fruitmand)}')
