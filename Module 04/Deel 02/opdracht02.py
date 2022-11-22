@@ -34,4 +34,4 @@ fruitmand = [{
     'color' : 'yellow',
     'round' : True
 }]
-for i in fruitmand: print(i)
+print(len(fruitmand))
