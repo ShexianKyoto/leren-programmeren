@@ -36,10 +36,10 @@ print(f'{kassabon}') # f string with {variable} parameter
 #
 # DRY: (Don't Repeat Yourself) logica geef je 1x aan..'
 #
-# break in een while is een nooduitgang (geen uitgang)
-# condition is altijd true of false
-# if false or true: true
-# expression is iets wat je uit kan rekenen
+# break in een while is een nooduitgang. (geen uitgang)
+# conditions zijn altijd true of false.
+# if false or true = altijd true.
+# expression is een combinatie van operators die een uitkomst produceren. (iets wat je uit kan rekenen)
 #
 # [lists] are used to store multiple items in a single variable.
 # (tuples) are used to store multiple items in a single variable, its a collection which is ordered and unchangeable.
