@@ -1,11 +1,20 @@
 namen is lijst met namen
-naam1 is userinput
-naam2 is userinput
-als naam2 gelijk is aan namen: voer naam2 opnieuw in
-naam3 is userinput
-als naam3 gelijk is aan namen: voer naam3 opnieuw in
+
+naam is userinput
+als naam in namen: voer naam opnieuw in
+als namen < 3:
+    naam is userinput
+    als naam in namen: voer naam opnieuw in
+    als namen < 3:
+        naam is userinput
+        als naam in namen: voer naam opnieuw in
+
 als namen > 3 is: nieuwe naam toevoegen?
-lootjes is lijst met namen
-naam + random lootje
+
+lootjes is lijst met namen maar geshuffled (randomized)
+
+naam + 1 lootje, pop lootje uit lijst (iedereen unieke lootje)
+
 als lootje gelijk is aan eigen naam: nieuw lootje
-print namen + bijbehorende lootjes
+
+print namen + bijbehorende (unieke) lootje
